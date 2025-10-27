@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "www.ovofast.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "docker.com",
+        "fanart.tv",
+        "fing.com",
+        "github.com",
+        "githubusercontent.com",
+        "mikanani.me",
+        "omdbapi.com",
+        "opensubtitles.com",
+        "opensubtitles.org",
+        "ovofast.com",
+        "themoviedb.org",
+        "thetvdb.com",
+        "tmdb.org",
+        "顶级机场.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "ovofast"
+      ]
+    }
+  ]
+}

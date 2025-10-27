@@ -136,16 +136,16 @@ proxy-groups:
   - {name: AI, <<: *S1, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/AI.png"}
   - {name: GitHub, <<: *S1, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/GitHub.png"}
   - {name: TikTok, <<: *S1, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/TikTok.png"}
-  - {name: Spotify, <<: *S1, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/Spotify.png"}
   - {name: Telegram, <<: *S1, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/Telegram.png"}
   - {name: NETFLIX, <<: *S1, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/Netflix.png"}
   - {name: PayPal, <<: *S1, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/PayPal.png"}
+  - {name: Spotify, <<: *S2, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/Spotify.png"}
   - {name: OneDrive, <<: *S2, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/OneDrive.png"}
   - {name: Microsoft, <<: *S2, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/Microsoft.png"}
   - {name: CloudFlare, <<: *S2, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/CloudFlare.png"}
   - {name: 漏网之鱼, <<: *S3, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/Omission.png"}
   # - {name: 香港故转, <<: [*FB, *AirportAll], filter: *HK, icon: *TransferIcon}
-  - {name: 德国故转, <<: [*FB, *AirportS1], filter: *DE, icon: *TransferIcon}
+  - {name: 德国故转, <<: [*FB, *AirportAll], filter: *DE, icon: *TransferIcon}
   - {name: 日本故转, <<: [*FB, *AirportAll], filter: *JP, icon: *TransferIcon}
   - {name: 狮城故转, <<: [*FB, *AirportAll], filter: *SG, icon: *TransferIcon}
   - {name: 美国故转, <<: [*FB, *AirportAll], filter: *US, icon: *TransferIcon}
@@ -155,18 +155,18 @@ proxy-groups:
   - {name: 狮城自动, <<: [*AUTO, *AirportAll], filter: *SG, icon: *AutoIcon}
   - {name: 美国自动, <<: [*AUTO, *AirportAll], filter: *US, icon: *AutoIcon}
   - {name: 全部自动, <<: [*AUTO, *AirportAll], filter: *Exclude, icon: *AllIcon}
-  # - {name: 香港手动, <<: *SD, filter: *HK}
-  # - {name: 日本手动, <<: *SD, filter: *JP}
-  # - {name: 狮城手动, <<: *SD, filter: *SG}
-  # - {name: 美国手动, <<: *SD, filter: *US}
-  # - {name: 🌐 全部节点, type: select, include-all: true}
+  # - {name: 香港手动, <<: [*SD, *AirportAll], filter: *HK, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/Hong_Kong.png"}
+  # - {name: 日本手动, <<: [*SD, *AirportAll], filter: *JP, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/Japan.png"}
+  # - {name: 狮城手动, <<: [*SD, *AirportAll], filter: *SG, icon: "https://cdn-icons-png.flaticon.com/512/197/197496.png"}
+  # - {name: 美国手动, <<: [*SD, *AirportAll], filter: *US, icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Large/USA.png"}
+  # - {name: 🌐 全部节点, <<: [*SD, *AirportAll]}
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
+# - DOMAIN-SUFFIX,qichiyu.com,默认代理 (临时添加规则)
 rules:
   - RULE-SET,private_ip,DIRECT,no-resolve
   - RULE-SET,private_domain,DIRECT
-  - DOMAIN-SUFFIX,qichiyu.com,默认代理
   - RULE-SET,proxylite,默认代理
   - RULE-SET,ai,AI
   - RULE-SET,github_domain,GitHub
